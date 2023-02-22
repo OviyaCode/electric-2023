@@ -1,38 +1,82 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  background: rgb(239, 237, 237);
+}
+.calc {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10vh auto;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: inline-block;
+  width: 400px;
+  height: auto;
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-box {
+  background-color: #ffffff !important;
+  box-shadow: 4px 3px 30px 3px rgba(231, 231, 232, 0.663);
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-radius: .7em;
+  margin-bottom: 1em !important;
+}
+
+table {
+  border-collapse: collapse;
+  border: none !important;
+  border-radius: 2em;
+  
+}
+
+table thead tr th {
+  padding: 12px;
+  background-color: rgb(10, 172, 221);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: .8em;
+  letter-spacing: .1em;
+
+}
+
+span {
+  padding: 0.5em;
+  color: rgb(94, 189, 213);
+  
+}
+
+label {
+  color: rgb(69, 68, 68);
+}
+
+input[type="number"] {
+  padding: .5em;
+  border-radius: .8em;
+  border: 1px solid #ccc;
+  color: rgb(82, 84, 85);
+  outline: none;
+  width: 50px;
+}
+
+button {
+  background-color: rgb(10, 172, 221);
+  padding: 1em;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 3em;
+  outline: none;
+}
+
+button:hover{
+  background-color: rgb(24, 118, 147);
 }
